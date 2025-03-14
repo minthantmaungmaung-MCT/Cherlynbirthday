@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Cherlyn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="welcome-screen">
+        <h1>🎂 Happy Birthday Cherlyn! 🎉</h1>
+        <p>Wishing you a day filled with love, laughter, and unforgettable memories!</p>
+        <button onclick="startCelebration()">Celebrate Now</button>
+    </div>
+    
+    <div class="main-content hidden">
+        <div class="header">
+            <h1>🎈 Birthday Celebration for Cherlyn 🎈</h1>
+        </div>
+        <div class="container">
+            <div class="chat-box">
+                <div class="balloon-container"></div>
+                <div class="message">
+                    <span class="sender">Min:</span>
+                    <span id="typing-effect"></span>
+                </div>
+                <button class="send-button" onclick="sendMessage()">Send Wish</button>
+            </div>
+            <div class="gallery">
+                <h2>Memorable Moments</h2>
+                <div class="image-grid">
+                    <img src="image1.jpg" alt="Memory 1">
+                    <img src="image2.jpg" alt="Memory 2">
+                    <img src="image3.jpg" alt="Memory 3">
+                </div>
+            </div>
+            <div class="wishes">
+                <h2>Leave Your Wishes 💌</h2>
+                <textarea id="wish-text" placeholder="Write your wish here..."></textarea>
+                <button class="send-button" onclick="submitWish()">Submit Wish</button>
+                <div id="wish-list"></div>
+            </div>
+        </div>
+    </div>
+    <audio id="bg-music" loop>
+        <source src="happy-birthday.mp3" type="audio/mpeg">
+    </audio>
+    <button id="music-toggle" onclick="toggleMusic()">🎵 Play Music</button>
+    <script src="script.js"></script>
+</body>
+</html>
